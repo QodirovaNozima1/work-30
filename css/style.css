@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+body{
+    background:linear-gradient(250deg, rgb(253, 79, 227) 60%, cyan);
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -15,7 +18,99 @@ a{
     margin: 0 auto;
 }
 .box{
-    background:linear-gradient(135deg, rgb(255, 0, 217) 60%, cyan);
+    padding-top: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.login{
+    width: 350px;
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    box-shadow:0 0 15px 0 rgb(201, 201, 201);
+    border: 1px solid rgb(237, 234, 234);
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        font-size: 16px;
+        color: rgb(253, 79, 227);
+    }
+    hr{
+    color: rgb(134, 130, 134);
+    }
+}
+.login__username,
+.login__password{
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    border:1px solid gainsboro;
+    padding-left: 10px;
+    color:rgb(253, 79, 227);
+    background:rgba(247, 249, 250, 0.632) ;
+    outline: none;
+    margin-bottom: 10px;
+}
+.model__name,
+.model__username{
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    border:1px solid gainsboro;
+    padding-left: 10px;
+    color:rgb(253, 79, 227);
+    background:rgba(247, 249, 250, 0.632) ;
+    outline: none;
+    margin-bottom: 10px;
+}
+.login button{
+    width: 200px  ;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    color:white;
+    background:rgba(253, 79, 227, 0.788);
+    transition: .3s;
+    font-weight: 700;
+    &:hover{
+        background: rgba(0, 255, 255, 0.612);
+
+    }
+}
+.btn__submit{
+    width: 200px  ;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    color:white;
+    background:rgba(253, 79, 227, 0.788);
+    transition: .3s;
+    font-weight: 700;
+    &:hover{
+        background: rgba(0, 255, 255, 0.612);
+
+    }
+}
+.btn__close{
+    width: 200px  ;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    color:white;
+    background:rgba(253, 79, 227, 0.788);
+    transition: .3s;
+    font-weight: 700;
+    &:hover{
+        background: rgba(0, 255, 255, 0.612);
+
+    }
 }
 .popap{
     display: none;
@@ -26,11 +121,12 @@ a{
     left: 0;
     width: 100%;
     height: 100vh;
-    background: #fff9;
+    background: white;
     background: #0004;
     z-index: 100;
     opacity: 0;
     animation: overlay .5s ease 0s forwards;
+    
 }
 @keyframes overlay {
     to{
@@ -45,15 +141,87 @@ a{
     transform: translate(-50%, -70%) scale(.8);
     width: 350px;
     min-height: 400px;
-    background: #fff;
+    background: #ffffff;
     z-index: 101;
     box-shadow: 0 0 25px #0005;
     opacity: 0;
     animation: model .5s ease 0s   forwards;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow:0 0 15px 0 rgb(201, 201, 201);
 }
 @keyframes model {
     to{
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
     }
+}
+
+.eyes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    border-radius: 5px;
+    border:1px solid gainsboro;
+    color:rgb(253, 79, 227);
+    background:rgba(247, 249, 250, 0.632) ;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.model__password,
+.model__password-confirm{
+    border: none;
+    width: 100%;
+    color:rgb(253, 79, 227);
+    background:transparent;
+    outline: none;
+}
+.eye__exist,
+.eye__conform{
+    border: none;
+    outline: none;
+    background:transparent;
+}
+
+.wrapper{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+.card{
+    width: 280px;
+    min-height: 350px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    box-shadow:0 0 15px 0 rgb(201, 201, 201);
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    line-height: 1.6;
+    h3{
+        font-size: 28px;
+        color: rgb(69, 69, 69);
+    }
+    p{
+        font-size: 20px;
+        color:rgb(69, 69, 69) ;
+    }
+}
+.card__circle{
+    width: 150px;
+    height: 150px;
+    background: rgb(0, 238, 255);
+    border-radius: 50%;
+    margin: auto;
 }

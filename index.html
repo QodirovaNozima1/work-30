@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
     <section class="box">
-        <div class="container">
              <form class="login" action="">
                 <input type="text" class="login__username" placeholder="Username">
                 <input type="password" class="login__password" placeholder="Password">
-                <button>Login</button>
+                <p>Forgot password?</p>
+                <hr>
+                <button type="submit" >Login</button>
+                <button class="btn__open" type="button" >Register</button>
              </form>
-        </div>
     </section>
-    <section>
-        <div class="container">
+    
+    <div class="wrapper">
+        
+    </div>
+    <!-- <section> -->
             <div class="popap">
                 <div class="overlay"></div>
-                <form class="model" action=""></form>
-                <input type="text" class="model__name" placeholder="name">
-                <input type="text" class="model__username" placeholder="username">
-                <input type="password" class="model__password" placeholder="password">
-                <input type="password" class="model__password-confirm" placeholder="password">
-                <button type="submit">Register</button>
-                <button type="button" class="btn__close">Cancel</button>
+                <form class="model" action="">
+                <input required type="text" class="model__name" placeholder="Name">
+                <input required type="text" class="model__username" placeholder="Username">
+                <div class="eyes"><input required type="password" class="model__password" placeholder="Password"><button style="display: none;" class="eye__exist" type="button"><i class="fa-solid fa-eye" style="color: #63E6BE;"></i></button></div>
+                <div class="eyes"><input required type="password" class="model__password-confirm" placeholder="Password"><button style="display: none;" class="eye__conform" type="button"><i class="fa-solid fa-eye" style="color: #63E6BE;"></i></button></div>
+                <button class="btn__submit" type="submit">Register</button>
+                <button  type="button" class="btn__close">Cancel</button>
+                </form>
             </div>
-        </div>
     </section>
+    <script type="module" src="./js/app.js"></script>
 </body>
 </html>
