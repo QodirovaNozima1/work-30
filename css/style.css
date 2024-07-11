@@ -23,7 +23,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 .login{
     width: 350px;
