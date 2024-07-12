@@ -26,13 +26,9 @@ model.addEventListener("submit",(event) =>{
     let username = modelUsername.value
     let password = modelPassword.value
     let passwordConfirm = modelPasswordComfirm.value
-    // if (password !== passwordConfirm) {
-    //     eyePassword.style.border = "1px solid red"
-    //     eyePasswordConfirm.style.border = "1px solid red"
-    //     return
-    // }
-    // eyePassword.style.border = "1px solid #0002 "
-    // eyePasswordConfirm.style.border = "1px solid #0002"
+    if (password !== passwordConfirm) {
+        return alert("parol  bir xil emas")
+    }
 
 
     let existUser = USERS.findIndex(user => user.username === username)
